@@ -1,12 +1,14 @@
 require('./mongo.js');
-const express = require ("express");
+const express = require("express");
 const server = express();
 const { PORT } = require("./config/config.js");
 const routes = require("./server/routes/employee.js");
+const cors = require('cors');
 
 
+server.use(cors());
 server.use(express.json());
-server.use("/api/v1", routes)
+server.use("/api/v1", routes);
 
 server.listen(PORT, () => {
     console.log(`The server is running on ${PORT}`);

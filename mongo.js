@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-const DB_URL = require("./pass.js");
+const password = require("./pass");
 
-const connectionString = `mongodb+srv://gabaeliz:${DB_URL}@cluster0.bcg1hxc.mongodb.net/?retryWrites=true&w=majority`
+const connectionString = `mongodb+srv://<username>:${password}@cluster1.5rxevqm.mongodb.net/?retryWrites=true&w=majority`
 
 
 
