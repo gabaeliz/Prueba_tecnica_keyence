@@ -6,7 +6,7 @@ const employeeShema = new Schema({
     date: Date,
     punchIn: Date,
     punchOut: Date
-})
+});
 
 const Employee = model('Employee', employeeShema) 
 
